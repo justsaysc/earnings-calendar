@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-19T08:24:48.546119+00:00",
+  "generated_at": "2026-03-19T08:26:04.782342+00:00",
   "current_records": [
     {
       "company_id": "tencent",
@@ -12,7 +12,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.tencent.com/en-us/investors.html",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -29,7 +29,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.alibabagroup.com/en-US/ir-home",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -45,7 +45,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.meituan.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -61,7 +61,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.asml.com/en/investors",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -78,7 +78,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.tsmc.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -90,11 +90,11 @@
       "aliases": [
         "TSLA"
       ],
-      "announce_date": "2026-04-22",
+      "announce_date": "2026-04-21",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.tesla.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -107,11 +107,11 @@
         "GOOGL",
         "GOOG"
       ],
-      "announce_date": "2026-04-24",
+      "announce_date": "2026-04-23",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://abc.xyz/investor/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -123,11 +123,11 @@
       "aliases": [
         "META"
       ],
-      "announce_date": "2026-04-30",
+      "announce_date": "2026-04-29",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.atmeta.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -139,11 +139,11 @@
       "aliases": [
         "MSFT"
       ],
-      "announce_date": "2026-04-30",
+      "announce_date": "2026-04-29",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.microsoft.com/en-us/investor",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -155,11 +155,11 @@
       "aliases": [
         "AMZN"
       ],
-      "announce_date": "2026-05-01",
+      "announce_date": "2026-04-30",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.aboutamazon.com/investor-relations",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -171,11 +171,11 @@
       "aliases": [
         "AAPL"
       ],
-      "announce_date": "2026-05-01",
+      "announce_date": "2026-04-30",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.apple.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -187,11 +187,11 @@
       "aliases": [
         "AMD"
       ],
-      "announce_date": "2026-05-06",
+      "announce_date": "2026-05-05",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.amd.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -207,7 +207,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286746",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -224,7 +224,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.baidu.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -236,11 +236,11 @@
       "aliases": [
         "NVDA"
       ],
-      "announce_date": "2026-05-21",
+      "announce_date": "2026-05-20",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.nvidia.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -252,11 +252,11 @@
       "aliases": [
         "AVGO"
       ],
-      "announce_date": "2026-06-04",
+      "announce_date": "2026-06-03",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investors.broadcom.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -268,11 +268,11 @@
       "aliases": [
         "ORCL"
       ],
-      "announce_date": "2026-06-11",
+      "announce_date": "2026-06-10",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.oracle.com/investor/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -290,7 +290,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.tencent.com/en-us/investors.html",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -307,7 +307,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.alibabagroup.com/en-US/ir-home",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -323,7 +323,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.meituan.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -339,7 +339,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.asml.com/en/investors",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -356,7 +356,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.tsmc.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -368,11 +368,11 @@
       "aliases": [
         "TSLA"
       ],
-      "announce_date": "2026-04-22",
+      "announce_date": "2026-04-21",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.tesla.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -385,11 +385,11 @@
         "GOOGL",
         "GOOG"
       ],
-      "announce_date": "2026-04-24",
+      "announce_date": "2026-04-23",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://abc.xyz/investor/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -401,11 +401,11 @@
       "aliases": [
         "META"
       ],
-      "announce_date": "2026-04-30",
+      "announce_date": "2026-04-29",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.atmeta.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -417,11 +417,11 @@
       "aliases": [
         "MSFT"
       ],
-      "announce_date": "2026-04-30",
+      "announce_date": "2026-04-29",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.microsoft.com/en-us/investor",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -433,11 +433,11 @@
       "aliases": [
         "AMZN"
       ],
-      "announce_date": "2026-05-01",
+      "announce_date": "2026-04-30",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.aboutamazon.com/investor-relations",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -449,11 +449,11 @@
       "aliases": [
         "AAPL"
       ],
-      "announce_date": "2026-05-01",
+      "announce_date": "2026-04-30",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.apple.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -465,11 +465,11 @@
       "aliases": [
         "AMD"
       ],
-      "announce_date": "2026-05-06",
+      "announce_date": "2026-05-05",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.amd.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -485,7 +485,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286746",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -502,7 +502,7 @@
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://ir.baidu.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -514,11 +514,11 @@
       "aliases": [
         "NVDA"
       ],
-      "announce_date": "2026-05-21",
+      "announce_date": "2026-05-20",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investor.nvidia.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -530,11 +530,11 @@
       "aliases": [
         "AVGO"
       ],
-      "announce_date": "2026-06-04",
+      "announce_date": "2026-06-03",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://investors.broadcom.com/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
@@ -546,11 +546,11 @@
       "aliases": [
         "ORCL"
       ],
-      "announce_date": "2026-06-11",
+      "announce_date": "2026-06-10",
       "fiscal_period": null,
       "source": "yfinance",
       "source_url": "https://www.oracle.com/investor/",
-      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "fetched_at": "2026-03-19T08:26:04.782342+00:00",
       "notes": "Auto-fetched from yfinance calendar.",
       "cancelled": false,
       "stale": false
