@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-19T08:09:39.685247+00:00",
+  "records": [],
+  "errors": [
+    "[tencent] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[alibaba] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[baidu] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[meituan] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[alphabet] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[apple] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[microsoft] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[nvidia] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[tsmc] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[tesla] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[amd] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[broadcom] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[meta] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[amazon] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[asml] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[oracle] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[minimax] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "[zhipu] Provider fetch failed: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  ]
+}

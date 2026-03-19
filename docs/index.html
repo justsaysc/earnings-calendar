@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>股票财报日历</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4efe6;
+        --card: #fffdf9;
+        --text: #1f1a16;
+        --muted: #63574d;
+        --line: #dfd4c6;
+        --accent: #9a3d1d;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino Linotype", serif;
+        background:
+          radial-gradient(circle at top left, rgba(154, 61, 29, 0.12), transparent 32%),
+          linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 20px 72px;
+      }
+
+      .card {
+        background: rgba(255, 253, 249, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 16px 40px rgba(42, 28, 17, 0.08);
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(32px, 5vw, 48px);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0 0 16px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      a.button {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.95em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>股票财报日历</h1>
+        <p>这是一个只包含 watchlist 财报事件的订阅日历。事件按公司去重，支持稳定更新和取消。</p>
+        <p>订阅地址：<code>earnings.ics</code></p>
+        <a class="button" href="./earnings.ics">打开 / 订阅 ICS</a>
+      </section>
+    </main>
+  </body>
+  </html>
+

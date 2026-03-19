@@ -1,0 +1,187 @@
+{
+  "calendar_name": "股票财报日历",
+  "timezone": "Asia/Shanghai",
+  "companies": [
+    {
+      "id": "tencent",
+      "name": "腾讯",
+      "primary_symbol": "0700.HK",
+      "aliases": ["0700.HK"],
+      "market": "HK",
+      "provider": "yahoo",
+      "official_url": "https://www.tencent.com/en-us/investors.html",
+      "enabled": true
+    },
+    {
+      "id": "alibaba",
+      "name": "阿里巴巴",
+      "primary_symbol": "BABA",
+      "aliases": ["BABA", "9988.HK"],
+      "market": "US/HK",
+      "provider": "yahoo",
+      "official_url": "https://www.alibabagroup.com/en-US/ir-home",
+      "enabled": true
+    },
+    {
+      "id": "baidu",
+      "name": "百度",
+      "primary_symbol": "BIDU",
+      "aliases": ["BIDU", "9888.HK"],
+      "market": "US/HK",
+      "provider": "yahoo",
+      "official_url": "https://ir.baidu.com/",
+      "enabled": true
+    },
+    {
+      "id": "meituan",
+      "name": "美团",
+      "primary_symbol": "3690.HK",
+      "aliases": ["3690.HK"],
+      "market": "HK",
+      "provider": "yahoo",
+      "official_url": "https://ir.meituan.com/",
+      "enabled": true
+    },
+    {
+      "id": "alphabet",
+      "name": "Alphabet",
+      "primary_symbol": "GOOGL",
+      "aliases": ["GOOGL", "GOOG"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://abc.xyz/investor/",
+      "enabled": true
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "primary_symbol": "AAPL",
+      "aliases": ["AAPL"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://investor.apple.com/",
+      "enabled": true
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "primary_symbol": "MSFT",
+      "aliases": ["MSFT"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://www.microsoft.com/en-us/investor",
+      "enabled": true
+    },
+    {
+      "id": "nvidia",
+      "name": "Nvidia",
+      "primary_symbol": "NVDA",
+      "aliases": ["NVDA"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://investor.nvidia.com/",
+      "enabled": true
+    },
+    {
+      "id": "tsmc",
+      "name": "台积电",
+      "primary_symbol": "TSM",
+      "aliases": ["TSM", "2330.TW"],
+      "market": "US/TW",
+      "provider": "yahoo",
+      "official_url": "https://investor.tsmc.com/",
+      "enabled": true
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "primary_symbol": "TSLA",
+      "aliases": ["TSLA"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://ir.tesla.com/",
+      "enabled": true
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "primary_symbol": "AMD",
+      "aliases": ["AMD"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://ir.amd.com/",
+      "enabled": true
+    },
+    {
+      "id": "broadcom",
+      "name": "Broadcom",
+      "primary_symbol": "AVGO",
+      "aliases": ["AVGO"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://investors.broadcom.com/",
+      "enabled": true
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "primary_symbol": "META",
+      "aliases": ["META"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://investor.atmeta.com/",
+      "enabled": true
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "primary_symbol": "AMZN",
+      "aliases": ["AMZN"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://www.aboutamazon.com/investor-relations",
+      "enabled": true
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "primary_symbol": "ASML",
+      "aliases": ["ASML"],
+      "market": "US/NL",
+      "provider": "yahoo",
+      "official_url": "https://www.asml.com/en/investors",
+      "enabled": true
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "primary_symbol": "ORCL",
+      "aliases": ["ORCL"],
+      "market": "US",
+      "provider": "yahoo",
+      "official_url": "https://www.oracle.com/investor/",
+      "enabled": true
+    },
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "primary_symbol": "0100.HK",
+      "aliases": ["0100.HK"],
+      "market": "HK",
+      "provider": "yahoo",
+      "official_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286746",
+      "enabled": true
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱",
+      "primary_symbol": "2513.HK",
+      "aliases": ["2513.HK"],
+      "market": "HK",
+      "provider": "yahoo",
+      "official_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286748",
+      "enabled": true
+    }
+  ]
+}
+

@@ -1,0 +1,19 @@
+{
+  "quoteSummary": {
+    "result": [
+      {
+        "calendarEvents": {
+          "earnings": {
+            "earningsDate": [
+              {
+                "raw": 1778630400,
+                "fmt": "2026-05-13"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "error": null
+  }
+}

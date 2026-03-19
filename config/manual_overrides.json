@@ -1,0 +1,12 @@
+{
+  "companies": {},
+  "_instructions": {
+    "format": {
+      "announce_date": "YYYY-MM-DD",
+      "fiscal_period": "Optional string, e.g. FY2026 Q1",
+      "source_url": "Optional URL",
+      "notes": "Optional text"
+    }
+  }
+}
+
