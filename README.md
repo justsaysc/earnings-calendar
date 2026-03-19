@@ -68,9 +68,9 @@ python3 generate_calendar.py
 ```
 
 输出：
-- [docs/earnings.ics](/Users/Su.Chen/Applications/Codex/earnings-calendar/docs/earnings.ics)
-- [data/resolved_events.json](/Users/Su.Chen/Applications/Codex/earnings-calendar/data/resolved_events.json)
-- [data/state.json](/Users/Su.Chen/Applications/Codex/earnings-calendar/data/state.json)
+- `docs/earnings.ics`
+- `data/resolved_events.json`
+- `data/state.json`
 
 ## 数据优先级
 
@@ -84,7 +84,7 @@ python3 generate_calendar.py
 
 ## GitHub Actions / Pages
 
-这个目录当前是一个独立项目模板。如果你要让 Actions 和 Pages 真正生效，应把这个目录作为单独仓库推到 GitHub，或者把其中内容放到目标仓库根目录。
+这个仓库设计为直接配合 GitHub Actions 和 GitHub Pages 使用。
 
 工作流会：
 - 每天两次生成 `docs/earnings.ics`
