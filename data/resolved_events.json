@@ -1,25 +1,560 @@
 {
-  "generated_at": "2026-03-19T08:21:44.212524+00:00",
-  "current_records": [],
-  "published_records": [],
-  "errors": [
-    "[tencent] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[alibaba] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[baidu] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[meituan] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[alphabet] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[apple] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[microsoft] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[nvidia] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[tsmc] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[tesla] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[amd] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[broadcom] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[meta] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[amazon] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[asml] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[oracle] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[minimax] Provider fetch failed: HTTP Error 429: Too Many Requests",
-    "[zhipu] Provider fetch failed: HTTP Error 429: Too Many Requests"
-  ]
+  "generated_at": "2026-03-19T08:24:48.546119+00:00",
+  "current_records": [
+    {
+      "company_id": "tencent",
+      "company_name": "腾讯",
+      "primary_symbol": "0700.HK",
+      "aliases": [
+        "0700.HK"
+      ],
+      "announce_date": "2026-03-18",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.tencent.com/en-us/investors.html",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "alibaba",
+      "company_name": "阿里巴巴",
+      "primary_symbol": "BABA",
+      "aliases": [
+        "BABA",
+        "9988.HK"
+      ],
+      "announce_date": "2026-03-19",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.alibabagroup.com/en-US/ir-home",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "meituan",
+      "company_name": "美团",
+      "primary_symbol": "3690.HK",
+      "aliases": [
+        "3690.HK"
+      ],
+      "announce_date": "2026-03-26",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.meituan.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "asml",
+      "company_name": "ASML",
+      "primary_symbol": "ASML",
+      "aliases": [
+        "ASML"
+      ],
+      "announce_date": "2026-04-15",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.asml.com/en/investors",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "tsmc",
+      "company_name": "台积电",
+      "primary_symbol": "TSM",
+      "aliases": [
+        "TSM",
+        "2330.TW"
+      ],
+      "announce_date": "2026-04-16",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.tsmc.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "tesla",
+      "company_name": "Tesla",
+      "primary_symbol": "TSLA",
+      "aliases": [
+        "TSLA"
+      ],
+      "announce_date": "2026-04-22",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.tesla.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "alphabet",
+      "company_name": "Alphabet",
+      "primary_symbol": "GOOGL",
+      "aliases": [
+        "GOOGL",
+        "GOOG"
+      ],
+      "announce_date": "2026-04-24",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://abc.xyz/investor/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "meta",
+      "company_name": "Meta",
+      "primary_symbol": "META",
+      "aliases": [
+        "META"
+      ],
+      "announce_date": "2026-04-30",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.atmeta.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "microsoft",
+      "company_name": "Microsoft",
+      "primary_symbol": "MSFT",
+      "aliases": [
+        "MSFT"
+      ],
+      "announce_date": "2026-04-30",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.microsoft.com/en-us/investor",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "amazon",
+      "company_name": "Amazon",
+      "primary_symbol": "AMZN",
+      "aliases": [
+        "AMZN"
+      ],
+      "announce_date": "2026-05-01",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.aboutamazon.com/investor-relations",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "apple",
+      "company_name": "Apple",
+      "primary_symbol": "AAPL",
+      "aliases": [
+        "AAPL"
+      ],
+      "announce_date": "2026-05-01",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.apple.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "amd",
+      "company_name": "AMD",
+      "primary_symbol": "AMD",
+      "aliases": [
+        "AMD"
+      ],
+      "announce_date": "2026-05-06",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.amd.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "minimax",
+      "company_name": "MiniMax",
+      "primary_symbol": "0100.HK",
+      "aliases": [
+        "0100.HK"
+      ],
+      "announce_date": "2026-05-07",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286746",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "baidu",
+      "company_name": "百度",
+      "primary_symbol": "BIDU",
+      "aliases": [
+        "BIDU",
+        "9888.HK"
+      ],
+      "announce_date": "2026-05-13",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.baidu.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "nvidia",
+      "company_name": "Nvidia",
+      "primary_symbol": "NVDA",
+      "aliases": [
+        "NVDA"
+      ],
+      "announce_date": "2026-05-21",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.nvidia.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "broadcom",
+      "company_name": "Broadcom",
+      "primary_symbol": "AVGO",
+      "aliases": [
+        "AVGO"
+      ],
+      "announce_date": "2026-06-04",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investors.broadcom.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "oracle",
+      "company_name": "Oracle",
+      "primary_symbol": "ORCL",
+      "aliases": [
+        "ORCL"
+      ],
+      "announce_date": "2026-06-11",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.oracle.com/investor/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    }
+  ],
+  "published_records": [
+    {
+      "company_id": "tencent",
+      "company_name": "腾讯",
+      "primary_symbol": "0700.HK",
+      "aliases": [
+        "0700.HK"
+      ],
+      "announce_date": "2026-03-18",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.tencent.com/en-us/investors.html",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "alibaba",
+      "company_name": "阿里巴巴",
+      "primary_symbol": "BABA",
+      "aliases": [
+        "BABA",
+        "9988.HK"
+      ],
+      "announce_date": "2026-03-19",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.alibabagroup.com/en-US/ir-home",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "meituan",
+      "company_name": "美团",
+      "primary_symbol": "3690.HK",
+      "aliases": [
+        "3690.HK"
+      ],
+      "announce_date": "2026-03-26",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.meituan.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "asml",
+      "company_name": "ASML",
+      "primary_symbol": "ASML",
+      "aliases": [
+        "ASML"
+      ],
+      "announce_date": "2026-04-15",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.asml.com/en/investors",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "tsmc",
+      "company_name": "台积电",
+      "primary_symbol": "TSM",
+      "aliases": [
+        "TSM",
+        "2330.TW"
+      ],
+      "announce_date": "2026-04-16",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.tsmc.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "tesla",
+      "company_name": "Tesla",
+      "primary_symbol": "TSLA",
+      "aliases": [
+        "TSLA"
+      ],
+      "announce_date": "2026-04-22",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.tesla.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "alphabet",
+      "company_name": "Alphabet",
+      "primary_symbol": "GOOGL",
+      "aliases": [
+        "GOOGL",
+        "GOOG"
+      ],
+      "announce_date": "2026-04-24",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://abc.xyz/investor/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "meta",
+      "company_name": "Meta",
+      "primary_symbol": "META",
+      "aliases": [
+        "META"
+      ],
+      "announce_date": "2026-04-30",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.atmeta.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "microsoft",
+      "company_name": "Microsoft",
+      "primary_symbol": "MSFT",
+      "aliases": [
+        "MSFT"
+      ],
+      "announce_date": "2026-04-30",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.microsoft.com/en-us/investor",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "amazon",
+      "company_name": "Amazon",
+      "primary_symbol": "AMZN",
+      "aliases": [
+        "AMZN"
+      ],
+      "announce_date": "2026-05-01",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.aboutamazon.com/investor-relations",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "apple",
+      "company_name": "Apple",
+      "primary_symbol": "AAPL",
+      "aliases": [
+        "AAPL"
+      ],
+      "announce_date": "2026-05-01",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.apple.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "amd",
+      "company_name": "AMD",
+      "primary_symbol": "AMD",
+      "aliases": [
+        "AMD"
+      ],
+      "announce_date": "2026-05-06",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.amd.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "minimax",
+      "company_name": "MiniMax",
+      "primary_symbol": "0100.HK",
+      "aliases": [
+        "0100.HK"
+      ],
+      "announce_date": "2026-05-07",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000286746",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "baidu",
+      "company_name": "百度",
+      "primary_symbol": "BIDU",
+      "aliases": [
+        "BIDU",
+        "9888.HK"
+      ],
+      "announce_date": "2026-05-13",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://ir.baidu.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "nvidia",
+      "company_name": "Nvidia",
+      "primary_symbol": "NVDA",
+      "aliases": [
+        "NVDA"
+      ],
+      "announce_date": "2026-05-21",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investor.nvidia.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "broadcom",
+      "company_name": "Broadcom",
+      "primary_symbol": "AVGO",
+      "aliases": [
+        "AVGO"
+      ],
+      "announce_date": "2026-06-04",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://investors.broadcom.com/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    },
+    {
+      "company_id": "oracle",
+      "company_name": "Oracle",
+      "primary_symbol": "ORCL",
+      "aliases": [
+        "ORCL"
+      ],
+      "announce_date": "2026-06-11",
+      "fiscal_period": null,
+      "source": "yfinance",
+      "source_url": "https://www.oracle.com/investor/",
+      "fetched_at": "2026-03-19T08:24:48.546119+00:00",
+      "notes": "Auto-fetched from yfinance calendar.",
+      "cancelled": false,
+      "stale": false
+    }
+  ],
+  "errors": []
 }

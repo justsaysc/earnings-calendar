@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import sys
 import unittest
 from datetime import date, datetime, timezone
@@ -25,24 +24,12 @@ class DummyProvider:
 
 
 class EngineTests(unittest.TestCase):
-    def test_yahoo_payload_parser_extracts_announce_date(self):
-        fixture_path = ROOT / "tests" / "fixtures" / "yahoo_tencent.json"
-        payload = json.loads(fixture_path.read_text(encoding="utf-8"))
-        company = Company(
-            id="tencent",
-            name="腾讯",
-            primary_symbol="0700.HK",
-            aliases=("0700.HK",),
-            market="HK",
-            provider="yahoo",
-            official_url="https://www.tencent.com/en-us/investors.html",
-            enabled=True,
-        )
+    def test_yahoo_provider_extracts_announce_date_from_calendar_dict(self):
         provider = YahooQuoteSummaryProvider()
-        record = provider.parse_payload(company, payload, datetime(2026, 3, 19, tzinfo=timezone.utc))
-        self.assertIsNotNone(record)
-        self.assertEqual(record.announce_date.isoformat(), "2026-05-13")
-        self.assertEqual(record.uid(), "earnings:tencent")
+        extracted = provider._extract_announce_date_from_calendar(
+            {"Earnings Date": [date(2026, 5, 13)]}
+        )
+        self.assertEqual(extracted.isoformat(), "2026-05-13")
 
     def test_fallback_and_cancellation_flow(self):
         generated_at = datetime(2026, 3, 19, tzinfo=timezone.utc)
@@ -121,4 +108,3 @@ class EngineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

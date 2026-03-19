@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+
       - name: Generate calendar
         run: python3 generate_calendar.py
 
@@ -34,4 +37,3 @@ jobs:
           git add docs/earnings.ics data/state.json data/resolved_events.json
           git commit -m "Update earnings calendar"
           git push
-

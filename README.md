@@ -21,6 +21,7 @@
 ├── docs/earnings.ics
 ├── docs/index.html
 ├── generate_calendar.py
+├── requirements.txt
 ├── src/earnings_calendar/
 └── tests/
 ```
@@ -64,6 +65,7 @@
 本地生成：
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 generate_calendar.py
 ```
 

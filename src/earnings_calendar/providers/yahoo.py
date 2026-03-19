@@ -1,49 +1,22 @@
 from __future__ import annotations
 
-import json
-from datetime import datetime, timezone
-from typing import Any
-from urllib.parse import quote
-from urllib.request import Request, urlopen
+from datetime import date, datetime
 
 from ..models import Company, EarningsRecord
 
 
 class YahooQuoteSummaryProvider:
-    base_url = "https://query1.finance.yahoo.com/v10/finance/quoteSummary"
-
     def fetch(self, company: Company, generated_at: datetime) -> EarningsRecord | None:
-        payload = self._request(company.primary_symbol)
-        return self.parse_payload(company, payload, generated_at)
+        import yfinance as yf
 
-    def _request(self, symbol: str) -> dict[str, Any]:
-        url = f"{self.base_url}/{quote(symbol)}?modules=calendarEvents"
-        request = Request(
-            url,
-            headers={
-                "User-Agent": (
-                    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-                ),
-                "Accept": "application/json",
-            },
-        )
-        with urlopen(request, timeout=20) as response:
-            return json.loads(response.read().decode("utf-8"))
+        ticker = yf.Ticker(company.primary_symbol)
 
-    def parse_payload(
-        self,
-        company: Company,
-        payload: dict[str, Any],
-        generated_at: datetime,
-    ) -> EarningsRecord | None:
-        result = ((payload.get("quoteSummary") or {}).get("result") or [])
-        if not result:
-            return None
+        announce_date = self._extract_announce_date_from_calendar(ticker.calendar)
+        notes = "Auto-fetched from yfinance calendar."
+        if announce_date is None:
+            announce_date = self._extract_announce_date_from_earnings_dates(ticker)
+            notes = "Auto-fetched from yfinance earnings dates."
 
-        calendar_events = (result[0].get("calendarEvents") or {}).get("earnings") or {}
-        earnings_dates = calendar_events.get("earningsDate") or []
-        announce_date = self._extract_announce_date(earnings_dates)
         if announce_date is None:
             return None
 
@@ -54,36 +27,63 @@ class YahooQuoteSummaryProvider:
             aliases=company.aliases,
             announce_date=announce_date,
             fiscal_period=None,
-            source="yahoo_quote_summary",
+            source="yfinance",
             source_url=company.official_url,
             fetched_at=generated_at,
-            notes="Auto-fetched from Yahoo Finance quoteSummary calendarEvents.",
+            notes=notes,
             cancelled=False,
             stale=False,
         )
 
-    def _extract_announce_date(self, raw_dates: Any):
-        if isinstance(raw_dates, dict):
+    def _extract_announce_date_from_calendar(self, calendar) -> date | None:
+        if not isinstance(calendar, dict):
+            return None
+        raw_dates = calendar.get("Earnings Date")
+        return self._normalize_dates(raw_dates)
+
+    def _extract_announce_date_from_earnings_dates(self, ticker) -> date | None:
+        try:
+            earnings_dates = ticker.get_earnings_dates(limit=1)
+        except Exception:  # noqa: BLE001
+            return None
+
+        if earnings_dates is None or getattr(earnings_dates, "empty", True):
+            return None
+
+        try:
+            first_index = earnings_dates.index[0]
+        except Exception:  # noqa: BLE001
+            return None
+
+        return self._to_date(first_index)
+
+    def _normalize_dates(self, raw_dates) -> date | None:
+        if raw_dates is None:
+            return None
+        if not isinstance(raw_dates, (list, tuple)):
             raw_dates = [raw_dates]
 
         candidates = []
         for item in raw_dates:
-            if not isinstance(item, dict):
-                continue
-            raw_value = item.get("raw")
-            fmt_value = item.get("fmt")
-            if raw_value is not None:
-                try:
-                    candidates.append(datetime.fromtimestamp(int(raw_value), tz=timezone.utc).date())
-                    continue
-                except (TypeError, ValueError, OSError):
-                    pass
-            if fmt_value:
-                try:
-                    candidates.append(datetime.fromisoformat(fmt_value).date())
-                except ValueError:
-                    continue
-
+            normalized = self._to_date(item)
+            if normalized is not None:
+                candidates.append(normalized)
         if not candidates:
             return None
         return min(candidates)
+
+    def _to_date(self, value) -> date | None:
+        if value is None:
+            return None
+        if isinstance(value, date) and not isinstance(value, datetime):
+            return value
+        if isinstance(value, datetime):
+            return value.date()
+        if hasattr(value, "to_pydatetime"):
+            return value.to_pydatetime().date()
+        if hasattr(value, "date"):
+            try:
+                return value.date()
+            except TypeError:
+                return None
+        return None
