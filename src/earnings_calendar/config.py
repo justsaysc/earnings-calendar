@@ -48,10 +48,10 @@ def load_overrides(path: str, companies: list[Company], generated_at: datetime) 
             source="manual_override",
             source_url=item.get("source_url", company.official_url),
             fetched_at=generated_at,
+            summary=item.get("summary"),
             notes=item.get("notes"),
             cancelled=False,
             stale=False,
         )
 
     return overrides
-

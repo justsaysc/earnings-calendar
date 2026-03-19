@@ -30,6 +30,7 @@ class YahooQuoteSummaryProvider:
             source="yfinance",
             source_url=company.official_url,
             fetched_at=generated_at,
+            summary=None,
             notes=notes,
             cancelled=False,
             stale=False,

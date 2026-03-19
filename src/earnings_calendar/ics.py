@@ -34,7 +34,7 @@ def _event_lines(record: EarningsRecord, generated_at: datetime) -> list[str]:
         _line("UID", record.uid()),
         _line("DTSTAMP", _format_dt(generated_at)),
         _line("LAST-MODIFIED", _format_dt(record.fetched_at)),
-        _line("SUMMARY", f"{record.company_name} 财报日"),
+        _line("SUMMARY", record.summary or f"{record.company_name} 财报日"),
         _line("DTSTART;VALUE=DATE", _format_date(start)),
         _line("DTEND;VALUE=DATE", _format_date(end)),
         _line("STATUS", "CANCELLED" if record.cancelled else "CONFIRMED"),
@@ -109,4 +109,3 @@ def _fold_lines(lines: list[str]) -> list[str]:
                 folded.append(f" {chunk}")
             start += 73
     return folded
-

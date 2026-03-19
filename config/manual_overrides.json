@@ -1,12 +1,19 @@
 {
-  "companies": {},
+  "companies": {
+    "zhipu": {
+      "announce_date": "2026-03-31",
+      "summary": "智谱 财报最迟公布日",
+      "source_url": "https://en-rules.hkex.com.hk/entiresection/5081",
+      "notes": "未见公司已公告具体财报发布日期。该日期按 HKEX Main Board Rule 13.49(1) 的年度业绩披露时限处理；公司招股书中的历史财务信息采用 12 月 31 日年度口径。拿到正式董事会/业绩公告日期后，建议用官方日期覆盖。"
+    }
+  },
   "_instructions": {
     "format": {
       "announce_date": "YYYY-MM-DD",
       "fiscal_period": "Optional string, e.g. FY2026 Q1",
       "source_url": "Optional URL",
+      "summary": "Optional custom event title",
       "notes": "Optional text"
     }
   }
 }
-

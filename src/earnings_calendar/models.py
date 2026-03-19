@@ -40,6 +40,7 @@ class EarningsRecord:
     source: str
     source_url: str | None
     fetched_at: datetime
+    summary: str | None = None
     notes: str | None = None
     cancelled: bool = False
     stale: bool = False
@@ -58,6 +59,7 @@ class EarningsRecord:
             "source": self.source,
             "source_url": self.source_url,
             "fetched_at": self.fetched_at.isoformat(),
+            "summary": self.summary,
             "notes": self.notes,
             "cancelled": self.cancelled,
             "stale": self.stale,
@@ -75,8 +77,8 @@ class EarningsRecord:
             source=raw["source"],
             source_url=raw.get("source_url"),
             fetched_at=datetime.fromisoformat(raw["fetched_at"]),
+            summary=raw.get("summary"),
             notes=raw.get("notes"),
             cancelled=bool(raw.get("cancelled", False)),
             stale=bool(raw.get("stale", False)),
         )
-
